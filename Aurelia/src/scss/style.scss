@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./maininicio";
+@import "./iconwhatsapp";
+@import "./footer";
+
+
+
+* {
+    @include format-document;
+}
+
+body {
+    scroll-behavior: smooth;
+
+}
