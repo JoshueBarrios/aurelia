@@ -1,0 +1,142 @@
+@import "./mixins";
+
+
+* {
+    @include format-document;
+}
+
+footer {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    margin: auto;
+    margin-top: 0px;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    padding: 5px;
+
+    h5 {
+        margin-top: 10px;
+        text-align: center;
+        color: $primary-color;
+        font-size: 30px;
+    }
+
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            margin: 5px;
+            color: $primary-color;
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+
+                i {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .info-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-color;
+
+        h6 {
+            text-decoration: overline;
+        }
+
+        span {
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        h5 {
+            margin-top: 10px;
+            text-align: center;
+            color: $primary-color;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        h5 {
+            margin-top: 10px;
+            text-align: center;
+            color: $primary-color;
+            font-size: 15px;
+        }
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            margin: 5px;
+            color: $primary-color;
+            font-size: 10px;
+
+            i {
+                color: $primary-color;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .info-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-color;
+
+        h6 {
+            text-decoration: overline;
+            font-size: 15px;
+        }
+
+        span {
+            i {
+                color: $primary-color;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    footer {
+        h5 {
+            margin-top: 10px;
+            text-align: center;
+            color: $primary-color;
+            font-size: 10px;
+        }
+    }
+}
